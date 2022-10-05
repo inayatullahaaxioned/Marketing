@@ -104,6 +104,11 @@ li {
   margin: 0 auto;
 }
 
+body{
+  width: 1286.5px;
+  margin: 0 auto;
+}
+
 :root {
   --clr-grey1: #f1f1f1;
   --clr-grey2: #bbb;
@@ -132,16 +137,103 @@ li {
   font-size: 21px;
 }
 
-
-
-
-
-
-
 /*=================================
   Header styling ends here
 =================================*/  
+/* banner section styling starts here  */
+.banner-section .wrapper {
+  padding: 68px 0 95px 0;
+}
 
+.logo {
+  padding-bottom: 32px;
+  font-size: 45px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 18px;
+  padding-bottom: 42px;
+}
+
+.banner-item:not(:first-child) {
+  display: none;
+}
+
+.banner-image {
+  position: relative;
+}
+
+.caption {
+  padding: 16px 20px;
+  margin: 25px 20px;
+  position: absolute;
+  top: 3.5px;
+  right: -.5%;
+  font-size: 20px;
+  background-color: #fff;
+}
+
+.control {
+  max-width: 1245px;
+  padding: 20px 21px 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--clr-grey3);
+}
+
+.left-slide,.right-slide,.btn {
+  text-indent: -9999px;
+  position: relative;
+}
+
+.left-slide::before,
+.right-slide::before {
+  content: "\f060";
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: var(--clr-grey3);
+  font-size: 20px;
+  font-family: "FontAwesome";
+  text-indent: 0;
+}
+
+.right-slide::before { 
+  content: "\f061";
+}
+
+.btn{
+  width: 20px;
+  height: 20px;
+  margin: .5px;
+  border: .5px solid #fff;
+  background-color: transparent;
+}
+
+.btn:hover,
+.btn:last-child {
+  background-color: #fff;
+  transition: all .3s;
+}
+
+.left-slide:hover::before,
+.right-slide:hover::before {
+  background-color: var(--clr-grey3);
+  color: #fff;
+  transition: all .5s;
+}
+
+/* banner section styling ends here  */
+/* what we offer styling starts here 
+
+what we offer styling ends here  */
 /*=================================
   main styling starts here
 =================================*/
