@@ -103,9 +103,35 @@ li {
   width: 96.94%; 
   margin: 0 auto;
 }
+
+:root {
+  --clr-grey1: #f1f1f1;
+  --clr-grey2: #bbb;
+  --clr-grey3: #616161;
+  --clr-black: #000;
+  --clr-green: #4caf50;
+}
 /*=================================
   Header styling starts here
 =================================*/
+.hamburger { display: none; }
+.header { background-color: var(--clr-grey1); }
+
+.header .wrapper {
+  width: 79.25%;
+  padding: 16px 0;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item {
+  color: #000;
+  font-size: 21px;
+}
+
 
 
 
