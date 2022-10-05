@@ -111,6 +111,32 @@ li {
   --clr-black: #000;
   --clr-green: #4caf50;
 }
+
+/* common styling starts here  */
+.heading {
+  padding-bottom: 18px;
+  display: inline-block;
+  font-size: 30px;
+  border-bottom: 8px solid #ccc;
+}
+
+.offer-items,
+.team .wrapper,
+.contact-section .wrapper { text-align: center; }
+
+.subheading, .para1, .para2 { text-align: left; }
+.para1,.para2 { font-size: 17px;}
+
+.subheading {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: bold;
+  padding-right: 5px;
+}
+
 /*=================================
   Header styling starts here
 =================================*/
@@ -226,6 +252,111 @@ li {
 }
 
 /* banner section styling ends here  */
+
+/* what we offer styling starts here */
+.offer-list {
+  display: flex;
+  padding: 60px 0 105px 0;
+}
+
+.design,.brand,.consult,.promise { flex-basis: 25%; }
+
+.design { background-color: var(--clr-grey1) }
+.brand { background-color: var(--clr-grey2) }
+.consult { background-color: var(--clr-grey3) }
+.promise { background-color: #000 }
+
+.para2 { color: #fff; }
+.offer-list li { padding: 40px 45px 40px 22px; }
+.offer-list .subheading { margin-bottom: 27px; }
+
+.consult .subheading,
+.promise .subheading { color: #fff; }
+
+.plan-heading {
+  padding-bottom: 38px;
+  font-size: 27px ;
+  letter-spacing: .5px;
+  text-align: center;
+}
+
+.plan-para {
+  font-size: 20px;
+  text-align: center;
+}
+
+.plan-type {
+  margin-top: 105px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.plan-type li {
+  flex-basis: 32%;
+}
+
+.plan-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-details li { 
+  padding: 25px ;
+  flex-basis: 32%;
+  text-align: center;
+}
+
+.plan-type .subheading {
+  padding: 45px 0;
+  border: .5px solid #dedede;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+
+}
+
+.plan-item, .signup-btn {
+  border: .5px solid #dedede;
+  font-size: 18px;
+}
+
+.price { 
+  padding: 40px ;
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+.month {
+  padding-top: 27px;
+  display: block;
+  color: #B6AFA6;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.pro .subheading { background-color: var(--clr-grey3)}
+
+.signup {
+  padding: 19px 30px;
+  background-color: var(--clr-green);
+  color: #fff;
+  font-size: 20px;
+}
+
+.signup-btn { background-color: var(--clr-grey1)}
+
+.signup:hover {
+  background-color: var(--clr-grey2);
+  color: #000;
+  transition: all .5s;
+}
+
+
+
+
+
+
+/* what we offer styling ends here  */
 /*=================================
   main styling starts here
 =================================*/
