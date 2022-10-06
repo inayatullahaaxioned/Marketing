@@ -604,6 +604,17 @@ li {
   .offer .wrapper { width: 90%; }
   .plan-type {
     flex-direction: column;
+    gap: 30px;
   }
 }
 /* media query for 767px ends here  */
+/* media query for 480px starts here  */
+@media only screen and (max-width: 480px) {
+  .caption {
+    padding: 10px 14px;
+    font-size: 90%;
+  }
+
+  .team-item { flex-basis: 80% ;}
+}
+/* media query for 480px ends here  */
