@@ -142,6 +142,17 @@ li {
   Header styling starts here
 =================================*/
 .hamburger { display: none; }
+
+.bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  display: block;
+  background-color: #000;
+  text-indent: -9999px;
+  transition: all .3s;
+}
+
 .header { background-color: var(--clr-grey1); }
 
 .header .wrapper {
@@ -159,6 +170,11 @@ li {
   font-size: 21px;
 }
 
+.nav-item:hover {
+  color: var(--clr-green);
+  transition: all .3s;
+ }
+
 /*=================================
   Header styling ends here
 =================================*/  
@@ -167,9 +183,7 @@ li {
   main styling starts here
 =================================*/
 /* banner section styling starts here  */
-.banner-section .wrapper {
-  padding: 68px 0 95px 0;
-}
+.banner-section .wrapper { padding: 68px 0 95px 0; }
 
 .logo {
   padding-bottom: 32px;
@@ -183,22 +197,17 @@ li {
   padding-bottom: 42px;
 }
 
-.banner-item:not(:first-child) {
-  display: none;
-}
-
-.banner-image {
-  position: relative;
-}
+.banner-item:not(:first-child) { display: none; }
+.banner-image { position: relative; }
 
 .caption {
   padding: 16px 20px;
   margin: 25px 20px;
   position: absolute;
-  top: 3.5px;
-  right: -.5%;
-  font-size: 20px;
+  top: 0;
+  right: 0;
   background-color: #fff;
+  font-size: 20px;
 }
 
 .control {
@@ -210,8 +219,8 @@ li {
 }
 
 .left-slide,.right-slide,.btn {
-  text-indent: -9999px;
   position: relative;
+  text-indent: -9999px;
 }
 
 .left-slide::before,
@@ -222,8 +231,8 @@ li {
   border-radius: 50%;
   float: left;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   background-color: #fff;
   color: var(--clr-grey3);
   font-size: 20px;
@@ -238,8 +247,8 @@ li {
 .btn{
   width: 20px;
   height: 20px;
-  margin: .5px;
   border: .5px solid #fff;
+  margin: .5px;
   background-color: transparent;
 }
 
@@ -260,12 +269,11 @@ li {
 
 /* what we offer styling starts here */
 .offer-list {
-  display: flex;
   padding: 60px 0 105px 0;
+  display: flex;
 }
 
 .design,.brand,.consult,.promise { flex-basis: 25%; }
-
 .design { background-color: var(--clr-grey1) }
 .brand { background-color: var(--clr-grey2) }
 .consult { background-color: var(--clr-grey3) }
@@ -274,9 +282,7 @@ li {
 .para2 { color: #fff; }
 .offer-list li { padding: 40px 45px 40px 22px; }
 .offer-list .subheading { margin-bottom: 27px; }
-
-.consult .subheading,
-.promise .subheading { color: #fff; }
+.consult .subheading, .promise .subheading { color: #fff; }
 
 .plan-heading {
   padding-bottom: 38px;
@@ -296,9 +302,7 @@ li {
   justify-content: space-between;
 }
 
-.plan-type li {
-  flex-basis: 32%;
-}
+.plan-type li { flex-basis: 32%; }
 
 .plan-details {
   display: flex;
@@ -317,7 +321,6 @@ li {
   background-color: #000;
   color: #fff;
   text-align: center;
-
 }
 
 .plan-item, .signup-btn {
@@ -356,16 +359,9 @@ li {
   transition: all .5s;
 }
 
-
-
-
-
-
 /* what we offer styling ends here  */
 /* team section styling starts here  */
-.team {
-  padding: 110px 0 50px 0;
-}
+.team { padding: 110px 0 50px 0; }
 
 .team-list {
   padding: 60px 0;
@@ -378,19 +374,13 @@ li {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px, rgba(0, 0, 0, 0.05) 0px 2px 4px, rgba(0, 0, 0, 0.05) 0px 4px 8px, rgba(0, 0, 0, 0.05) 0px 8px 16px, rgba(0, 0, 0, 0.05) 0px 16px 32px, rgba(0, 0, 0, 0.05) 0px 32px 64px;
 }
 
-.team-img {
-  margin-bottom: 5px;
-}
+.team-img { margin-bottom: 5px; }
 
 .team-name,
 .designation,
-.para1 {
-  text-align: left;
-}
+.para1 { text-align: left; }
 
-.team-name {
-  font-size: 30px;
-}
+.team-name { font-size: 30px; }
 
 .team-name,
 .designation,
@@ -413,14 +403,12 @@ li {
 .contact-btn {
   width: 100%;
   padding: 16px 0 ;
+  background-color: var(--clr-grey1);
   color: #454545;
   font-size: 17px;
-  background-color: var(--clr-grey1);
 }
 
-.contact {
-  margin: 20px;
-}
+.contact { margin: 20px; }
 
 .contact:hover,
 .contact-btn:hover {
@@ -432,13 +420,9 @@ li {
 
 /* team section styling ends here  */
 /* contact section styling starts here  */
-.contact-section form {
-  padding: 80px 0 100px 0;
-}
+.contact-section form { padding: 80px 0 100px 0; }
 
-.input-box {
-  text-align: left;
-}
+.input-box { text-align: left; }
 
 .input-box label {
   font-size: 18px;
@@ -511,13 +495,8 @@ li {
   transition: all .3s;
 }
 
-.social {
-  margin-bottom: 36px;
-}
-
-.social-icon {
-  text-indent: -9999px;
-}
+.social { margin-bottom: 36px; }
+.social-icon { text-indent: -9999px; }
 
 .social-icon::before {
   content: "\f230";
