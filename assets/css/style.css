@@ -98,6 +98,14 @@ li {
   list-style-type: none;
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
@@ -123,9 +131,13 @@ li {
 
 .offer-items,
 .team .wrapper,
-.contact-section .wrapper { text-align: center; }
+.contact-section .wrapper { 
+  text-align: center;
+}
 
-.subheading, .para1, .para2 { text-align: left; }
+.subheading, .para1, .para2 {
+  text-align: left;
+}
 .para1,.para2 { font-size: 17px;}
 
 .subheading {
@@ -183,7 +195,7 @@ li {
   main styling starts here
 =================================*/
 /* banner section styling starts here  */
-.banner-section .wrapper { padding: 68px 0 95px 0; }
+.banner-section .wrapper { padding: 68px 0 95px; }
 
 .logo {
   padding-bottom: 32px;
@@ -193,8 +205,8 @@ li {
 }
 
 .subtitle {
-  font-size: 18px;
   padding-bottom: 42px;
+  font-size: 18px;
 }
 
 .banner-item:not(:first-child) { display: none; }
@@ -211,7 +223,6 @@ li {
 }
 
 .control {
-  max-width: 1245px;
   padding: 20px 21px 15px 20px;
   display: flex;
   justify-content: space-between;
@@ -288,6 +299,7 @@ li {
   padding: 0 9px 16px 0;
   color: #fff;
 }
+
 .offer-list li { padding: 40px 45px 40px 22px; }
 .offer-list .subheading { margin-bottom: 18px; }
 .consult .subheading, .promise .subheading { color: #fff; }
@@ -331,7 +343,8 @@ li {
   text-align: center;
 }
 
-.plan-item, .signup-btn {
+.plan-item,
+.signup-btn {
   border: .5px solid #dedede;
   font-size: 18px;
 }
@@ -396,7 +409,8 @@ li {
   padding: 9px 16px;
 }
 
-.team-name { padding-bottom: 20px;}
+.team-name { padding-bottom: 20px; }
+
 .designation { 
   font-size: 19px;
   color: var(--clr-grey2);
@@ -429,7 +443,6 @@ li {
 /* team section styling ends here  */
 /* contact section styling starts here  */
 .contact-section form { padding: 80px 0 100px 0; }
-
 .input-box { text-align: left; }
 
 .input-box label {
@@ -469,7 +482,8 @@ li {
 /*=================================
   footer styling starts here
 =================================*/ 
-.footer { background-color: var(--clr-grey1)}
+.footer { background-color: var(--clr-grey1) }
+
 .footer .wrapper {
   padding: 65px 0 50px 0;
   text-align: center;
@@ -529,6 +543,7 @@ li {
 }
 
 .poweredby { font-size: 18px; }
+
 .w3 { 
   color: #000;
   text-decoration: underline;
@@ -545,20 +560,20 @@ li {
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
-.offer-list {
-  flex-direction: column;
-  justify-content: center;
-  gap: 40px;
-}
+  .offer-list {
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+  }
 
-.team-list {
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-}
+  .team-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
 
-.team-item { flex-basis: 46%; }
-}  
+  .team-item { flex-basis: 46%; }
+}
 /* media query for 995px ends here  */
 /* media query for 767px starts here  */
 @media only screen and (max-width: 767px) {
@@ -576,20 +591,19 @@ li {
     right: 0;
   }
 
-  .hamburger:hover+.nav {
-  right: 0;
+  .hamburger:hover + .nav {
+    right: 0;
   }
 
   .nav {
-  z-index: 2;
   position: fixed;
+  z-index: 2;
   top: 0;
   right: -100%;
   background: var(--clr-grey2);
   width: 100%;
   height: 100vh;
   transition: all .3s;
-
   }
 
   .nav-list {
