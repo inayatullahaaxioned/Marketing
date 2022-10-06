@@ -497,12 +497,13 @@ li {
 
 .top-icon:hover,
 .top-icon:hover::before {
-  background-color: var(--clr-grey1);
+  border: 2px solid var(--clr-grey2);
+  background-color: #fff;
   color: #000;
-  scale: 1.05;
   transition: all .3s;
 }
 
+.top-icon:hover::before { border: none; }
 .social { margin-bottom: 36px; }
 .social-icon { text-indent: -9999px; }
 
@@ -618,3 +619,8 @@ li {
   .team-item { flex-basis: 80% ;}
 }
 /* media query for 480px ends here  */
+/* media query for 320px starts here  */
+@media only screen and (max-width: 320px) {
+  .contact-section .wrapper { width: 85%; }
+}
+/* media query for 320px ends here  */
