@@ -536,7 +536,18 @@ li {
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
+.offer-list {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
 
+.team-list {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
 
-
+.team-item { flex-basis: 46%; }
 }  
+/* media query for 995px ends here  */
