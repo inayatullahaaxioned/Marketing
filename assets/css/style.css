@@ -209,6 +209,8 @@ li {
   font-size: 18px;
 }
 
+.banner-list { display: flex; }
+.banner-item { flex-basis: 100%; }
 .banner-item:not(:first-child) { display: none; }
 .banner-image { position: relative; }
 
@@ -305,7 +307,7 @@ li {
 .consult .subheading, .promise .subheading { color: #fff; }
 
 .plan-heading {
-  padding-bottom: 38px;
+  padding-bottom: 28px;
   font-size: 27px ;
   letter-spacing: .5px;
   text-align: center;
@@ -450,7 +452,10 @@ li {
   text-align: left;
 }
 
-.input-box { padding: 4px 0; }
+.input-box {
+  padding: 4px 0;
+  margin-bottom: 20px;
+}
 
 .input-box input {
   width: 100%;
@@ -469,7 +474,6 @@ li {
   width: 100%;
   padding: 13px 0;
   border: none;
-  margin: 16px 0;
   background-color: #000;
   color: #fff;
   font-size: 20px;
@@ -632,12 +636,15 @@ li {
 /* media query for 767px ends here  */
 /* media query for 480px starts here  */
 @media only screen and (max-width: 480px) {
+  .logo { font-size: 35px; }
+  .plan-type { margin-top: 50px; }
+
   .caption {
     padding: 10px 14px;
     font-size: 90%;
   }
 
-  .team-item { flex-basis: 80% ;}
+  .team-item { flex-basis: 95% ;}
 }
 /* media query for 480px ends here  */
 /* media query for 320px starts here  */
